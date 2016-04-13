@@ -93,4 +93,6 @@ body{
 	border: 2px solid #D32f2f;
 	cursor: pointer;
 }
-
+.contenedor{
+	display: none;
+}
