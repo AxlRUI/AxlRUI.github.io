@@ -158,3 +158,8 @@ body{
 				outline: none;
 				background: #B6B6B6;
 			}
+			.contenedor .formulario .input-group input[type="text"].error,
+			.contenedor .formulario .input-group input[type="password"].error,
+			.contenedor .formulario .input-group input[type="email"].error{
+				background: #D32F2F;
+			}
