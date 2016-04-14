@@ -50,8 +50,14 @@ body{
 	height: 50%;
 	width: 80%;
 	margin: 0 auto;
+	-webkit-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	transition: all 1000ms ease;
 	
 }
+	.bienvenida:hover{
+		background: rgba(0,0,0,1);
+	}
 .reg{
 	display: block;
 	padding: 30px;
@@ -62,8 +68,14 @@ body{
 	height: 100%;
 	width: 100%;
 	margin-top: 20px;
+	-webkit-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	transition: all 1000ms ease;
 
 }
+	.reg:hover{
+		background: rgba(0,0,0,1);
+	}
 .registro input[type="button"]{
 	font-size: 20px;
 	text-decoration: none;
@@ -93,4 +105,56 @@ body{
 	border: 2px solid #D32f2f;
 	cursor: pointer;
 }
+.none{
+	display: none;
+}
+.wrap{
+	margin-top: 20px;
+	width: 100%;
+	padding: 40px;
+	background: rgba(0,0,0,0.9);
+	-webkit-transition:all 1000ms ease;
+	-o-transition:all 1000ms ease;
+	transition: all 1000ms ease;
+	color: #fff;
 
+}
+
+.wrap:hover{
+	background: rgba(0,0,0,1);
+}
+.contenedor{
+	width: 100%
+	color: #f2f2f2;
+}
+	.contenedor .formulario{
+		width: 100%;
+		margin: auto;
+	}
+		.contenedor .formulario .input.group{
+			position: relative;
+			margin-bottom: 32px;
+		}
+		.contenedor .formulario .input-group input[type="text"],
+		.contenedor .formulario .input-group input[type="password"],
+		.contenedor .formulario .input-group input[type="email"]{
+			font-size: 16px;
+			width: 95%;
+			outline: none;
+			padding: 15px;
+			background: none;
+			border: none;
+			border-bottom: 2px solid #B6B6B6;
+			-webkit-transition:all 1000ms ease;
+			-o-transition:all 1000ms ease;
+			transition: all 1000ms ease;
+		}
+			.contenedor .formulario .input-group input[type="text"]:focus,
+			.contenedor .formulario .input-group input[type="text"]:active,
+			.contenedor .formulario .input-group input[type="password"]:focus,
+			.contenedor .formulario .input-group input[type="password"]:active,
+			.contenedor .formulario .input-group input[type="email"]:focus,
+			.contenedor .formulario .input-group input[type="email"]:active{
+				outline: none;
+				background: #B6B6B6;
+			}
