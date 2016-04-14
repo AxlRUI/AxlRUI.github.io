@@ -8,6 +8,8 @@ body{
 	font-family: "Raleway";
 	padding-top: 100px;
 	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 }
 	header nav {
 		width: 100%;
@@ -66,7 +68,7 @@ body{
 	color: #fff;
 	margin: 0 auto;
 	height: 100%;
-	width: 100%;
+	width: 80%;
 	margin-top: 20px;
 	-webkit-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
@@ -96,7 +98,7 @@ body{
 	font-size: 20px;
 	background: #D32F2F;
 	padding: 10px;
-	margin-left: 40%;
+	margin-left: 35%;
 	color: #fff;
 	display: inline-block;
 	-webkit-transition: all 0.3s ease;
@@ -105,12 +107,15 @@ body{
 	border: 2px solid #D32f2f;
 	cursor: pointer;
 }
+.login input[type="button"]:hover{
+	box-shadow: inset 0 0 15px 10px #F44336;
+}
 .none{
 	display: none;
 }
 .wrap{
-	margin-top: 20px;
-	width: 100%;
+	margin: 0 auto;
+	width: 80%;
 	padding: 40px;
 	background: rgba(0,0,0,0.9);
 	-webkit-transition:all 1000ms ease;
@@ -138,6 +143,7 @@ body{
 		.contenedor .formulario .input-group input[type="text"],
 		.contenedor .formulario .input-group input[type="password"],
 		.contenedor .formulario .input-group input[type="email"]{
+			color: white;
 			font-size: 16px;
 			width: 95%;
 			outline: none;
@@ -156,10 +162,61 @@ body{
 			.contenedor .formulario .input-group input[type="email"]:focus,
 			.contenedor .formulario .input-group input[type="email"]:active{
 				outline: none;
-				background: #B6B6B6;
+				box-shadow: inset 0 0 20px 10px #B6B6B6;
 			}
 			.contenedor .formulario .input-group input[type="text"].error,
 			.contenedor .formulario .input-group input[type="password"].error,
 			.contenedor .formulario .input-group input[type="email"].error{
 				background: #D32F2F;
 			}
+			.contenedor .formulario .input-group input[type="text"].error +label,
+			.contenedor .formulario .input-group input[type="password"].error + label,
+			.contenedor .formulario .input-group input[type="email"].error + label{
+				color: #D32f2f;
+			}
+		.contenedor .formulario .input-gropu label{
+			color: #040404;
+		}
+			.contenedor .formularo .input-group label.label{
+			-webkit-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				margin-left: 15px;
+				font-size: 16px;
+				line-height: 16px;
+				position: absolute;;
+				top: 16px;
+				left: 0;	
+			}
+				.contenedor .formulario .input-group label.label.active{
+					top: -12px;
+					font-size: 12px;
+					line-height: 12px;
+					color: #b6b6b6;
+				}
+		.contenedor .formulario .input-group.error label{
+			color: #D32f2f;
+		}
+			.contenedor .formulario .input-group.error label:hover{
+				background: rgba(211,47,47,0.2);
+			}
+			.contendor .formulario .input-group.error label:before{
+				border: 2px solid #D32f2f;
+			}
+		.contenedor .formulario input[type="button"]{
+			background: #D32F2F;
+			border: none;
+			color: #fff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 16px;
+			padding: 15px;
+			-webkit-transition: all 1000ms ease;
+			-o-transition: all 1000ms ease;
+			transition: all 1000ms ease;
+			width: 100%;
+		}
+		.contenedor .formulario input[type="button"]:hover{
+			background: #D32F2F;
+			box-shadow: inset 0 0 15px 10px #F44336;
+		}
