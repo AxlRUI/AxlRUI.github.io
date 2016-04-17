@@ -169,8 +169,8 @@ header nav ul li .sub {
 }
 .logo{
 	right: 0;
-	width: 100px;
-	height: 100px;
+	width: 408.5px;
+	height: 137px;
 	position: absolute;
 	margin-right: 10px;
 }
@@ -179,6 +179,8 @@ header nav ul li .sub {
 	width: 90%;
 	max-width: 1000px;
 	margin: 20px auto;
+	margin-top: 90px;
+	max-height: 2000px;
 }
 .slide{
 	width: 100%;
@@ -187,6 +189,7 @@ header nav ul li .sub {
 	width: 100%;
 }
 .slidesjs-pagination{
+	display: none;
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	transition: all 500ms ease;
@@ -214,10 +217,10 @@ header nav ul li .sub {
 	background: #639d17;
 }
 .slidesjs-navigation{
+	display: none;
 	background: #3f51b5;
 	color: white;
 	text-decoration: none;
-	display: inline-block;
 	padding: 11.2px 20px;
 	float: right;
 }
@@ -235,3 +238,16 @@ h1.subbanner{
 	padding: 20px auto;
 	padding-top: 10px;
 }
+div.medicos{
+	margin: 0 auto;
+	position: absolute;
+}
+	div.medicos li img{
+		margin: 0 auto;
+		position: relative;
+		margin-top: 30px;
+		border: solid 3px #639d17;
+	}
+	div.medicos li img:hover{
+		border: solid 3px #3f51b5;
+	}

@@ -47,7 +47,7 @@ body{
 	text-decoration: none;
 	text-align: center;
 	display: block;
-	background: rgba(0,0,0,0.9);
+	background: rgba(33,33,33,0.9);
 	color: #fff;
 	height: 50%;
 	width: 80%;
@@ -57,27 +57,25 @@ body{
 	transition: all 1000ms ease;
 	
 }
-	.bienvenida:hover{
-		background: rgba(0,0,0,1);
-	}
+
 .reg{
+	position: fixed;
+	z-index: 1000;
 	display: block;
 	padding: 30px;
 	font-size: 20px;
-	background: rgba(0,0,0,0.9);
+	background: rgba(33,33,33,1);
 	color: #fff;
 	margin: 0 auto;
-	height: 100%;
-	width: 80%;
+	margin-bottom: 0;
+	bottom: 0;
+	width: 100%;
 	margin-top: 20px;
 	-webkit-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
 
 }
-	.reg:hover{
-		background: rgba(0,0,0,1);
-	}
 .registro input[type="button"]{
 	font-size: 20px;
 	text-decoration: none;
@@ -89,10 +87,13 @@ body{
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	border: 2px solid #D32f2f;
+	border: none;
 	cursor: pointer;
 	z-index: 4000;
 }
+	.registro input[type="button"]:hover{
+		background: #536DFE;
+	}
 .login input[type="button"]{
 	text-decoration: none;
 	font-size: 20px;
@@ -104,20 +105,24 @@ body{
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	border: 2px solid #D32f2f;
+	border: none;
 	cursor: pointer;
 }
-.login input[type="button"]:hover{
-	box-shadow: inset 0 0 15px 10px #F44336;
-}
+	.login input[type="button"]:hover{
+		background: #536DFE;
+	}
 .none{
 	display: none;
 }
 .wrap{
+	position: relative;
 	margin: 0 auto;
-	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 200px;
+	width: 50%;
+	height: 80%;
 	padding: 40px;
-	background: rgba(0,0,0,0.9);
+	background: rgba(33,33,33,0.9);;
 	-webkit-transition:all 1000ms ease;
 	-o-transition:all 1000ms ease;
 	transition: all 1000ms ease;
@@ -125,98 +130,35 @@ body{
 
 }
 
-.wrap:hover{
-	background: rgba(0,0,0,1);
-}
 .contenedor{
 	width: 100%
 	color: #f2f2f2;
 }
-	.contenedor .formulario{
-		width: 100%;
-		margin: auto;
+	.contenedor .formulario .inut-group{
+		position: relative;
+		margin-bottom: 32px;
 	}
-		.contenedor .formulario .input.group{
-			position: relative;
-			margin-bottom: 32px;
-		}
-		.contenedor .formulario .input-group input[type="text"],
-		.contenedor .formulario .input-group input[type="password"],
-		.contenedor .formulario .input-group input[type="email"]{
-			color: white;
-			font-size: 16px;
-			width: 95%;
+	.contenedor .formulario .input-group input[type="text"],
+	.contenedor .formulario .input-group input[type="password"],
+	.contenedor .formulario .input-group input[type="email"]{
+		font-size: 30px;
+		width: 95%;
+		outline: none;
+		padding: 15px;
+		background: none;
+		border: 2px solid #fff;
+	}
+		.contenedor .formulario .input-group input[type="text"]:focus,
+		.contenedor .formulario .input-group input[type="text"]:active,
+		.contenedor .formulario .input-group input[type="password"]:focus,
+		.contenedor .formulario .input-group input[type="password"]:active,
+		.contenedor .formulario .input-group input[type="email"]:focus,
+		.contenedor .formulario .input-group input[type="email"]:active{
 			outline: none;
-			padding: 15px;
-			background: none;
-			border: none;
-			border-bottom: 2px solid #B6B6B6;
-			-webkit-transition:all 1000ms ease;
-			-o-transition:all 1000ms ease;
-			transition: all 1000ms ease;
+			border: 2px solid #536DFE;
 		}
-			.contenedor .formulario .input-group input[type="text"]:focus,
-			.contenedor .formulario .input-group input[type="text"]:active,
-			.contenedor .formulario .input-group input[type="password"]:focus,
-			.contenedor .formulario .input-group input[type="password"]:active,
-			.contenedor .formulario .input-group input[type="email"]:focus,
-			.contenedor .formulario .input-group input[type="email"]:active{
-				outline: none;
-				box-shadow: inset 0 0 20px 10px #B6B6B6;
-			}
-			.contenedor .formulario .input-group input[type="text"].error,
-			.contenedor .formulario .input-group input[type="password"].error,
-			.contenedor .formulario .input-group input[type="email"].error{
-				background: #D32F2F;
-			}
-			.contenedor .formulario .input-group input[type="text"].error +label,
-			.contenedor .formulario .input-group input[type="password"].error + label,
-			.contenedor .formulario .input-group input[type="email"].error + label{
-				color: #D32f2f;
-			}
-		.contenedor .formulario .input-gropu label{
-			color: #040404;
-		}
-			.contenedor .formularo .input-group label.label{
-			-webkit-transition: all 0.3s ease;
-				-o-transition: all 0.3s ease;
-				transition: all 0.3s ease;
-				margin-left: 15px;
-				font-size: 16px;
-				line-height: 16px;
-				position: absolute;;
-				top: 16px;
-				left: 0;	
-			}
-				.contenedor .formulario .input-group label.label.active{
-					top: -12px;
-					font-size: 12px;
-					line-height: 12px;
-					color: #b6b6b6;
-				}
-		.contenedor .formulario .input-group.error label{
-			color: #D32f2f;
-		}
-			.contenedor .formulario .input-group.error label:hover{
-				background: rgba(211,47,47,0.2);
-			}
-			.contendor .formulario .input-group.error label:before{
-				border: 2px solid #D32f2f;
-			}
-		.contenedor .formulario input[type="button"]{
-			background: #D32F2F;
-			border: none;
-			color: #fff;
-			cursor: pointer;
-			display: inline-block;
-			font-size: 16px;
-			padding: 15px;
-			-webkit-transition: all 1000ms ease;
-			-o-transition: all 1000ms ease;
-			transition: all 1000ms ease;
-			width: 100%;
-		}
-		.contenedor .formulario input[type="button"]:hover{
-			background: #D32F2F;
-			box-shadow: inset 0 0 15px 10px #F44336;
+		.contenedor .formulario .input-group input[type="text"].error,
+		.contenedor .formulario .input-group input[type="password"].error,
+		.contenedor .formulario .input-group input[type="email"].error{
+			border: 2px solid #F44336;
 		}

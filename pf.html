@@ -19,8 +19,50 @@
 		</nav> 
 	<div>
 	</header>-->
-		<a class="bienvenida">
-			<img src="proyectofinal/otros/logolearn.png" width="181" height="344" alt=""><br>Bienvenido a Learn English Tu portal para el aprendizaje del ingles online<br>Welcome to learn english
+			<div class="contenido">
+			<section class="contenedor">
+				<div class="none" id="change">
+					<form class="formulario" name="formulario_login" method="post"> 
+							<div class="input-group" id="name">  
+								<label class="label">Nombre:</label> 
+								<input type="text" id="nombre">  
+								
+							</div>  
+							<div class="input-group" id="pass"> 
+								<label class="label">Contraseña:</label> 
+								<input type="password" id="contraseña">  
+								 
+							</div>  
+							<div class="input-group" id="pass2">  
+								<label class="label">Repetir Contraseña:</label> 
+								<input type="password" id="contraseña2">  
+					
+							</div> 
+							<div class="input-group" id="email">
+								 <label class="label">Correo Electronico:</label> 
+								<input type="email" id="correo">  
+								
+							</div> 	
+							<input type="button" id="enviar" onClick="registroenv();" value="Entrar">
+					</form> 
+				</div>
+			</section>
+			<section class="contenedor">
+				<div class="none" id="change2">
+					<form class="formulario" name="formulario_login" method="post">
+						<div class="input-group" id="name">
+							<label class="label">Nombre:</label>
+							<input type="text" id="nombre">
+						</div>
+						<div class="input-group" id="pass">
+							<label class="label">Contraseña:</label>
+							<input type="password" id="contraseña">
+						</div>
+						<input type="button" id="Entrar" onClick="loginenv();" value="Entrar">
+					</form>
+				</div>
+		<a class="bienvenida" id="bienvenida">
+			<img src="proyectofinal/otros/logolearn.png" width="141" height="294" alt=""><br>Bienvenido a Learn English Tu portal para el aprendizaje del ingles online<br>Welcome to learn english
 		</a>
 	</div>
 	<div class="reg">
@@ -31,44 +73,7 @@
 			<input type="button" onClick="login();" value="Ingresar">
 		</a>
 	</div>
-		<div class="contenido">
-			<section class="contenedor">
-				<div class="none" id="change">
-					<form class="formulario" name="formulario_login" method="post"> 
-							<div class="input-group" id="name">  
-								<input type="text" id="nombre">  
-								<label class="label">Nombre:</label> 
-							</div>  
-							<div class="input-group" id="pass">  
-								<input type="password" id="contraseña">  
-								<label class="label">Contraseña:</label> 
-							</div>  
-							<div class="input-group" id="pass2">  
-								<input type="password" id="contraseña2">  
-								<label class="label">Repetir Contraseña:</label> 
-							</div> 
-							<div class="input-group" id="email">  
-								<input type="email" id="correo">  
-								<label class="label">Correo Electronico:</label> 
-							</div> 	
-							<input type="button" id="enviar" onClick="registroenv();" value="Entrar">
-					</form> 
-				</div>
-			</section>
-			<section class="contenedor">
-				<div class="none" id="change2">
-					<form class="formulario" name="formulario_login" method="post">
-						<div class="input-group" id="name">
-							<input type="text" id="nombre">
-							<label class="label">Nombre:</label>
-						</div>
-						<div class="input-group" id="pass">
-							<input type="password" id="contraseña">
-							<label class="label">Contraseña:</label>
-						</div>
-						<input type="button" id="Entrar" onClick="loginenv();" value="Entrar">
-					</form>
-				</div>
+
 				
 			</section>
 		</div>
