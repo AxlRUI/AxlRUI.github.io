@@ -114,6 +114,7 @@ header nav ul li .sub {
 		font-size: 25px;
 		font-weight: bold;
 		text-decoration: none;
+		cursor: pointer;
 	}
  
 	.menu span {
@@ -239,6 +240,7 @@ h1.subbanner{
 	padding-top: 10px;
 }
 div.medicos{
+	text-align: center;
 	position: relative;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -256,3 +258,9 @@ div.medicos{
 	div.medicos li img:hover{
 		border: solid 3px #3f51b5;
 	}
+.title{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 60px;
+	color: #3f51b5;
+}
