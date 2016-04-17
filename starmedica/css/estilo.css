@@ -239,8 +239,13 @@ h1.subbanner{
 	padding-top: 10px;
 }
 div.medicos{
+	position: relative;
 	margin: 0 auto;
-	position: absolute;
+	margin-top: 20px;
+	margin-bottom: 200px;
+	width: 50%;
+	height: 80%;
+	padding: 40px;
 }
 	div.medicos li img{
 		margin: 0 auto;
