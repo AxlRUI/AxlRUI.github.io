@@ -51,6 +51,7 @@ function user(){
 
 		document.getElementById("cita").className = "wrap";
 		document.getElementById("login").className = "none";
+		document.getElementById("salir").className = "salir";
 	}
 	else{
 		alert("Contraseña o Usuario Incorrectos");
@@ -66,4 +67,13 @@ function cita(){
 function receta(){
 	document.getElementById("cita").className = "none";
 	document.getElementById("receta").className = "receta";
+};
+function encuesta(){
+  alert("Tu diagnostico médico ah sido capturado")
+};
+function salir(){
+	document.getElementById("cita").className = "none";
+	document.getElementById("login").className = "wrap";
+	document.getElementById("salir").className = "none";
+	document.getElementById("receta").className = "none";
 };

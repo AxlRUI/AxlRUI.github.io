@@ -272,9 +272,9 @@ div.medicos{
 	padding: 40px;
 	margin: auto;
 	background: #fff;
-	-webkit-transition:all 1000ms ease;
-	-o-transition:all 1000ms ease;
-	transition: all 1000ms ease;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition: all 500ms ease;
 }
 .wrap:hover{
 	box-shadow: 0px 0px 30px #8BC34A;
@@ -341,9 +341,9 @@ div.medicos{
     }
         .contenedor .formulario .input-group label.label 
         {
-          -webkit-transition: all 1000ms ease;
-          -o-transition: all 1000ms ease;
-          transition: all 1000ms ease;
+          -webkit-transition: all 500ms ease;
+          -o-transition: all 500ms ease;
+          transition: all 500ms ease;
           margin-left: 15px;
           font-size: 16px;
           line-height: 16px;
@@ -368,9 +368,9 @@ div.medicos{
         padding: 5px 15px 5px 51px;
         font-size: 1em;
         border-radius: 3px;
-        -webkit-transition: all 1000ms ease;
-        -o-transition: all 1000ms ease;
-        transition: all 1000ms ease; 
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease; 
     }
         .contenedor .formulario .input-group.checkbox label:hover, 
         .contenedor .formulario .input-group.radio label:hover 
@@ -442,9 +442,9 @@ div.medicos{
       font-size: 16px;
       padding: 15px;
       width: 100%;
-      -webkit-transition: all 1000ms ease;
-      -o-transition: all 1000ms ease;
-      transition: all 1000ms ease;
+      -webkit-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
        }
       .contenedor .formulario input[type="submit"]:hover 
       {
@@ -461,9 +461,9 @@ div.medicos{
       font-size: 16px;
       padding: 15px;
       width: 100%;
-      -webkit-transition: all 1000ms ease;
-      -o-transition: all 1000ms ease;
-      transition: all 1000ms ease;
+      -webkit-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
        }
       .contenedor .formulario input[type="button"]:hover 
       {
@@ -483,9 +483,9 @@ div.medicos{
 			      font-size: 16px;
 			      padding: 15px;
 			      width: 100%;
-			      -webkit-transition: all 1000ms ease;
-			      -o-transition: all 1000ms ease;
-			      transition: all 1000ms ease;
+			      -webkit-transition: all 500ms ease;
+			      -o-transition: all 500ms ease;
+			      transition: all 500ms ease;
 			}
 			.contenedor .formulario2 input[type="date"]:hover{
 				background: #8BC34A;
@@ -547,9 +547,9 @@ div.medicos{
     }
         .contenedor .formulario2 .input-group label.label 
         {
-          -webkit-transition: all 1000ms ease;
-          -o-transition: all 1000ms ease;
-          transition: all 1000ms ease;
+          -webkit-transition: all 500ms ease;
+          -o-transition: all 500ms ease;
+          transition: all 500ms ease;
           margin-left: 15px;
           font-size: 16px;
           line-height: 16px;
@@ -574,9 +574,9 @@ div.medicos{
         padding: 5px 15px 5px 51px;
         font-size: 1em;
         border-radius: 3px;
-        -webkit-transition: all 1000ms ease;
-        -o-transition: all 1000ms ease;
-        transition: all 1000ms ease; 
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease; 
     }
         .contenedor .formulario2 .input-group.checkbox label:hover, 
         .contenedor .formulario2 .input-group.radio label:hover 
@@ -648,9 +648,9 @@ div.medicos{
       font-size: 16px;
       padding: 15px;
       width: 100%;
-      -webkit-transition: all 1000ms ease;
-      -o-transition: all 1000ms ease;
-      transition: all 1000ms ease;
+      -webkit-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
        }
       .contenedor .formulario2 input[type="submit"]:hover 
       {
@@ -667,9 +667,9 @@ div.medicos{
       font-size: 16px;
       padding: 15px;
       width: 100%;
-      -webkit-transition: all 1000ms ease;
-      -o-transition: all 1000ms ease;
-      transition: all 1000ms ease;
+      -webkit-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
        }
       .contenedor .formulario2 input[type="button"]:hover 
       {
@@ -684,3 +684,24 @@ div.receta{
 	height: 80%;
 	padding: 40px;
 }
+h5{
+	font-size: 20px;
+	color: #212121;
+}
+div.salir input[type="button"]{
+	font-size: 30px;
+	position: fixed;
+	background: #3F51B5;
+	color: #fff;
+	border: none;
+	padding: 15px;
+	bottom: 0;
+	cursor: pointer;
+	-webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+	div.salir input[type="button"]:hover{
+		background: #8BC34A;
+		padding: 30px;
+	}

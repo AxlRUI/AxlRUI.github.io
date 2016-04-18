@@ -15,7 +15,9 @@
 		<div class="menu">
 			<a class="boton"><span class="icon-menu"></span>StarMédica</a>
 		</div>
- 
+ 		<div id="salir" class="salir">
+			<input type="button" value="Salir" onClick="salir();">
+		</div>
 		<nav>
 			<img class="logo" src="otros/logo.png" alt="StarMedica">
 
@@ -57,7 +59,7 @@
 		</h1>
 	</div>
 	<div class="contenedor">
-		<div id="login" class="wrap">
+		<div id="login" class="none">
 			<form action="" class="formulario" name="formulario" method="get">
 				<div>
 					<div class="input-group">
@@ -75,7 +77,7 @@
 		</div>
 	</div>
 	<div class="contenedor">
-		<div id="cita" class="none">
+		<div id="cita" class="wrap">
 			<form action="" class="formulario2" name="formulario2" method="get">
 				<div>
 					<label class="label" for="fecha">Fecha para la cita</label>
