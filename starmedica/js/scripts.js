@@ -43,3 +43,27 @@ $(function(){
 function enviar(){
   alert("Ya estas registrado")
 };
+function user(){
+
+	var input = document.getElementById("nombre"),
+		password = document.getElementById("pass");
+	if ((input.value == "paciente") && (password.value = "pass")){
+
+		document.getElementById("cita").className = "wrap";
+		document.getElementById("login").className = "none";
+	}
+	else{
+		alert("Contraseña o Usuario Incorrectos");
+	};
+	return false;
+};
+function pago(){
+  alert("Tu pago ah sido realizado")
+};
+function cita(){
+  alert("Tu cita ah sido agendada")
+};
+function receta(){
+	document.getElementById("cita").className = "none";
+	document.getElementById("receta").className = "receta";
+};
