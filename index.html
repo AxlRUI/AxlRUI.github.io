@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn English</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="proyectofinal/js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="proyectofinal/css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="proyectofinal/otros/fonts.css">
+	<link href= https://fonts.googleapis.com/css?family=Raleway  rel= stylesheet  type= text/css >
+
+
+</head>
+<body>
+	<header class="none" id="header">
+		<div class="menu">
+			<a class="boton"><span class="icon-menu"></span>Learn english</a>
+		</div>
+		<nav>
+			<ul>
+				<li class="submenu">
+					<a><span class="icon-book"></span>Exercises<span class="sub icon-circle-down"></a>
+					<ul class="hijo">
+						<li><a onClick="">Vocabulary</a></li>
+						<li><a >Grammar</a></li>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a><span class="icon-user"></span>Account<span class="sub icon-circle-down"></span></a>
+					<ul class="hijo">
+						<li><a >Stats</a></li>
+					</ul>
+				<li class="submenu">
+					<a onClick=""><span class="icon-x-altx-alt"></span>Exit
+					<ul class="hijo">
+					</ul>
+				</li>
+			</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particles-js"></div>
+	<a class="bienvenida" id="bienvenida">
+			<img src="proyectofinal/otros/logolearn.png" width="141" height="294" alt=""><br>Bienvenido a Learn English Tu portal para el aprendizaje del ingles online<br>Welcome to learn english
+	</a>
+	
+			<div class="contenido">
+			
+			<section class="contenedor">
+				<div class="none" id="change">
+					<form class="formulario" name="formulario_login" method="post"> 
+							<div class="input-group" id="name">  
+								<label class="label">Nombre:</label> 
+								<input type="text" id="nombre">  
+								
+							</div>  
+							<div class="input-group" id="pass"> 
+								<label class="label">Contraseña:</label> 
+								<input type="password" id="contraseña">  
+								 
+							</div>  
+							<div class="input-group" id="pass2">  
+								<label class="label">Repetir Contraseña:</label> 
+								<input type="password" id="contraseña2">  
+					
+							</div> 
+							<div class="input-group" id="email">
+								 <label class="label">Correo Electronico:</label> 
+								<input type="email" id="correo">  
+								
+							</div> 	
+							<input type="button" id="enviar" onClick="registroenv();" value="Entrar">
+					</form> 
+				</div>
+			</section>
+<!--                                                                                                                   -->
+			<section class="contenedor">
+				<div class="none" id="change2">
+					<form class="formulario" name="formulario_login" method="post">
+						<div class="input-group" id="name">
+							<label class="label">Nombre:</label>
+							<input type="text" id="po">
+						</div>
+						<div class="input-group" id="pass">
+							<label class="label">Contraseña:</label>
+							<input type="password" id="pu">
+						</div>
+						<input type="button" id="Entrar" onClick="valusuario();" value="Entrar">
+					</form>
+				</div>
+			<section class="contenedor">
+				<div class="none" id="inicio">
+					
+				</div>
+			</section>
+		
+
+
+	<div class="reg" id="reg">
+		<a class="registro" >
+			<input type="button" onClick="registro();" value="Registrarse">
+		</a>
+		<a class="login" >
+			<input type="button" onClick="login();" value="Ingresar">
+		</a>
+	</div>
+
+	</div>
+	<script type="text/javascript" src="proyectofinal/js/particles.js"></script>
+	<script type="text/javascript" src="proyectofinal/js/particulas.js"></script>
+</body>
+</html>
