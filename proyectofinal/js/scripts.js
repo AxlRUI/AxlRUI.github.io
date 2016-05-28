@@ -56,3 +56,9 @@ function principal(){
 	document.getElementById("reg").className = "none";
 
 };
+function vocabulary(){
+
+};
+function exit(){
+	location.href = 'http://axlrui.github.io/index.html';
+};
