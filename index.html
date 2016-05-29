@@ -117,22 +117,64 @@
 					</form>
 				</div>
 			</section>
+
 			<section class="contenedor">
-				<div class="none" id="grammar">
-					<div class="formulario"><h1>Grammar</h1></div>
+				<div class="none" id="grammar"  style="text-align:center;">
+					<div class="formulario">
+						<h1>Grammar</h1>
+						<p>Choose the correct answer</p>
+					</div>
 					<form class="formulario" name="formulario_login" method="post">
-						<div class="input-group" id="name">
-							<label class="label">Nombre:</label>
-							<input type="text" id="po">
+						<div class="input-group radio">
+							<h5>1.Which word CANNOT go in the space? We went shopping and ____ we went to a café and had a cup of coffee.</h5>
+							<input type="radio" id="respuesta" name="resp" >
+							<label for="respuesta">after</label>
+							<input type="radio" id="respuesta2" name="resp" >
+							<label for="respuesta2">afterwards</label>
+							<input type="radio" id="respuesta3" name="resp" >
+							<label for="respuesta3">then</label>
 						</div>
-						<div class="input-group" id="pass">
-							<label class="label">Contraseña:</label>
-							<input type="password" id="pu">
+						<div class="input-group radio">
+							<h5>2.Which word completes the sentence? Anna plays tennis every ___.</h5>
+							<input type="radio" id="respuesta4" name="resp2" >
+							<label for="respuesta4">week</label>
+							<input type="radio" id="respuesta5" name="resp2" >
+							<label for="respuesta5">days</label>
+							<input type="radio" id="respuesta6" name="resp2" >
+							<label for="respuesta6">sundays</label>
 						</div>
-						<input type="button" id="Entrar" onClick="valusuario();" value="Entrar">
+						<div class="input-group radio">
+							<h5>3. Which word completes the sentence?Derek always goes skateboarding ___ Saturdays.</h5>
+							<input type="radio" id="respuesta7" name="resp3" >
+							<label for="respuesta7">each</label>
+							<input type="radio" id="respuesta8" name="resp3" >
+							<label for="respuesta8">every</label>
+							<input type="radio" id="respuesta9" name="resp3" >
+							<label for="respuesta9">on</label>
+						</div>
+						<div class="input-group radio">
+							<h5>4.   Which sentence is correct?</h5>
+							<input type="radio" id="respuesta10" name="resp4" >
+							<label for="respuesta10">Tom soon is going home.</label>
+							<input type="radio" id="respuesta11" name="resp4" >
+							<label for="respuesta11">I visited yesterday my grandmother.</label>
+							<input type="radio" id="respuesta12" name="resp4" >
+							<label for="respuesta12">We're having a party tomorrow.</label>
+						</div>
+						<div class="input-group radio">
+							<h5>5.   Which sentence is NOT correct?</h5>
+							<input type="radio" id="respuesta13" name="resp5" >
+							<label for="respuesta13">We inside went because it was cold.</label>
+							<input type="radio" id="respuesta14" name="resp5" >
+							<label for="respuesta14">It's lovely weather. Let's go outside</label>
+							<input type="radio" id="respuesta14" name="resp5" >
+							<label for="respuesta14">I'd like to work overseas.</label>
+						</div>
+						<input type="button" id="genviar" onClick="valres();" value="Enviar">
 					</form>
 				</div>
 			</section>
+
 			<section class="contenedor">
 				<div class="none" id="stats">
 					<div class="formulario"><h1>Stats</h1></div>
