@@ -265,7 +265,7 @@ header nav ul li .sub {
 	width: 50%;
 	height: 80%;
 	padding: 40px;
-	background: rgba(33,33,33,0.9);;
+	background: rgba(33,33,33,0.9);
 	-webkit-transition:all 1000ms ease;
 	-o-transition:all 1000ms ease;
 	transition: all 1000ms ease;
@@ -414,3 +414,85 @@ header nav ul li .sub {
           color: #FF5252;
           padding: 5px 15px; 
       }
+
+.image1{
+	margin-left: 25%;
+}
+.image1 img{
+
+	text-align: center;
+	display: inline-block;
+	z-index: 40000;
+	width: 200px;
+	height: 200px;
+	border: 4px solid #fff;
+	margin: 0 auto;
+	margin-left: 20px;
+	-webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; 
+}
+	.image1 img:hover{
+		cursor: pointer;
+		border-color: #3F51B5;
+		border-radius: 20%;
+		padding: 2px;
+	}
+	.image2{
+	margin-left: 25%;
+}
+.image2 img{
+	text-align: center;
+	display: inline-block;
+	z-index: 40000;
+	width: 200px;
+	height: 200px;
+	border: 4px solid #fff;
+	margin: 0 auto;
+	margin-left: 20px;
+	-webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; 
+}
+	.image2 img:hover{
+		cursor: pointer;
+		border-color: #3F51B5;
+		border-radius: 20%;
+		padding: 2px;
+	}
+
+.fine img{
+	text-align: center;
+	display: inline-block;
+	z-index: 40000;
+	width: 200px;
+	height: 200px;
+	border: 4px solid green;
+	margin: 0 auto;
+	margin-left: 20px;
+	-webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; 
+}
+.wrong img{
+	text-align: center;
+	display: inline-block;
+	z-index: 40000;
+	width: 200px;
+	height: 200px;
+	border: 4px solid red;
+	margin: 0 auto;
+	margin-left: 20px;
+	-webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; 
+}
+
+.stats div{
+	display: inline-block;
+	margin: 20px;
+}
+.inter{
+	color: #536DFE;
+	font-size: 40px;
+}

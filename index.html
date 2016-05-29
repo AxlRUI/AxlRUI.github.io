@@ -103,18 +103,27 @@
 
 			<section class="contenedor">
 				<div class="none" id="vocabulary">
-					<div class="formulario"><h1>Vocabulary</h1></div>
-					<form class="formulario" name="formulario_login" method="post">
-						<div class="input-group" id="name">
-							<label class="label">Nombre:</label>
-							<input type="text" id="po">
-						</div>
-						<div class="input-group" id="pass">
-							<label class="label">Contraseña:</label>
-							<input type="password" id="pu">
-						</div>
-						<input type="button" id="Entrar" onClick="valusuario();" value="Entrar">
-					</form>
+					<h1 style="text-align:center;">Vocabulary<br><br></h1>
+					<h4 style="text-align:center;">Choose the correct picture: Apple"</h4>
+					<br>
+					<br>
+					<div class="image1">
+						<a id="correct" onclick="valresimg();">
+							<img src="proyectofinal/otros/apple.png" alt="apple">
+						</a>
+						<a id="incorrect1" onclick="valresimg();">
+							<img src="proyectofinal/otros/pineapple.png" alt="pineapple">
+						</a>	
+					</div>
+					<div class="image2">
+						<a id="incorrect2" onclick="valresimg();">
+							<img src="proyectofinal/otros/pear.png" alt="pear">
+						</a>
+						<a id="incorrect3" onclick="valresimg();">
+							<img src="proyectofinal/otros/grape.png" alt="grape">
+						</a>
+							
+					</div>
 				</div>
 			</section>
 
@@ -204,18 +213,14 @@
 
 			<section class="contenedor">
 				<div class="none" id="stats">
-					<div class="formulario"><h1>Stats</h1></div>
-					<form class="formulario" name="formulario_login" method="post">
-						<div class="input-group" id="name">
-							<label class="label">Nombre:</label>
-							<input type="text" id="po">
-						</div>
-						<div class="input-group" id="pass">
-							<label class="label">Contraseña:</label>
-							<input type="password" id="pu">
-						</div>
-						<input type="button" id="Entrar" onClick="valusuario();" value="Entrar">
-					</form>
+					<div class="stats">
+						<div><h1>Completed Lessons</h1></div>
+						<div><p class="inter">18</p></div>
+					</div>
+					<div class="stats">
+						<div><h1>Studied Hours</h1></div>
+						<div><p class="inter">40:20:10</p></div>
+					</div>
 				</div>
 			</section>
 		

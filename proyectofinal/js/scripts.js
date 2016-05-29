@@ -122,4 +122,10 @@ function valSubmit(obj){
 			}
 
 };	
+function valresimg(){
+	document.getElementById("correct").className = "fine";
+	document.getElementById("incorrect1").className = "wrong";
+	document.getElementById("incorrect2").className = "wrong";
+	document.getElementById("incorrect3").className = "wrong";
+};
 
