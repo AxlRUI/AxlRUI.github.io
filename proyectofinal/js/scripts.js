@@ -91,3 +91,34 @@ function registroenv(){
 		alert("Registro realizado con exito");
 	}
 };
+function valradio(obj,correct){
+	var result = 0;
+	for(var i=0; i<obj.legnth; i++){
+		if(obj[i].checked==true && obje[i].value==correct){
+			result = 1;
+		}
+	}
+	if(!result && obj.value == correct){
+		result = 1;
+	}
+	return result
+}
+function valSubmit(obj){
+	var error = '';
+	if(!validateRadio(obj.resp,3)){error+='\nFirst answer is wrong';}
+	if(!validateRadio(obj.resp2,1)){error+='\nSecond answer is wrong';}
+	if(!validateRadio(obj.resp3,3)){error+='\nThird answer is wrong';}
+	if(!validateRadio(obj.resp4,1)){error+='\nFourth answer is wrong';}
+	if(!validateRadio(obj.resp5,2)){error+='\nFifth answer is wrong';}
+	if(!validateRadio(obj.resp6,1)){error+='\nSixth answer is wrong';}
+	if(!validateRadio(obj.resp7,1)){error+='\nSeventh answer is wrong';}
+	if(!validateRadio(obj.resp8,1)){error+='\nEighth answer is wrong';}
+	if (error.legnth){
+		alert("Problem:"+error);
+		return false;
+	}else{
+		alert("All answers are correct, Good job");
+		return true;
+	}
+
+}	
