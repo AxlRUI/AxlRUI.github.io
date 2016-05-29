@@ -10,8 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="proyectofinal/otros/fonts.css">
 	<link href= https://fonts.googleapis.com/css?family=Raleway  rel= stylesheet  type= text/css >
 
-	
-
 
 </head>
 <body>
@@ -122,18 +120,19 @@
 
 			<section class="contenedor">
 				<div class="none" id="grammar"  style="text-align:center;">
+
 					<div class="formulario">
 						<h1>Grammar</h1>
 						<p>Choose the correct answer</p>
 					</div>
-					<form class="formulario" name="formulario_login" method="post" onsubmit="return valSubmit(this);" action="#">
+					<form class="formulario" name="formulario_login" >
 						<div class="input-group radio">
 							<h5>1.Which word CANNOT go in the space? We went shopping and ____ we went to a café and had a cup of coffee.</h5>
-							<input onchange="if(!validateRadio(obj.resp,3)) alert('incorrect');" type="radio" id="respuesta" name="resp" value="1">
+							<input onChange="if(!validateRadio(obj.resp,3)) alert('incorrect');" type="radio" id="respuesta" name="resp" value="1">
 							<label for="respuesta">after</label>
-							<input onchange="if(!validateRadio(obj.resp,3)) alert('incorrect');" type="radio" id="respuesta2" name="resp" value="2">
+							<input onChange="if(!validateRadio(obj.resp,3)) alert('incorrect');" type="radio" id="respuesta2" name="resp" value="2">
 							<label for="respuesta2">afterwards</label>
-							<input onchange="if(!validateRadio(obj.resp,3)) alert('incorrect');" type="radio" id="respuesta3" name="resp" value="3">
+							<input onChange="if(!validateRadio(obj.resp,3)) alert('incorrect');" type="radio" id="respuesta3" name="resp" value="3">
 							<label for="respuesta3">then</label>
 						</div>
 						<div class="input-group radio">
@@ -199,7 +198,7 @@
 							<input type="radio" id="respuesta24" name="resp8" value="3">
 							<label for="respuesta24">Ask</label>
 						</div>
-						<input type="submit"  value="Send Answers">
+						<input type="button" onClick="valSubmit(this);"  value="Send Answers">
 					</form>
 				</div>
 			</section>
@@ -235,38 +234,6 @@
 	</div>
 	<script type="text/javascript" src="proyectofinal/js/particles.js"></script>
 	<script type="text/javascript" src="proyectofinal/js/particulas.js"></script>
-	<script type="text/javascript">
-				function valradio(obj,correct){
-				var result = 0;
-				for(var i=0; i<obj.legnth; i++){
-					if(obj[i].checked==true && obje[i].value==correct){
-						result = 1;
-					}
-				}
-				if(!result && obj.value == correct){
-					result = 1;
-				}
-				return result
-			}
-				function valSubmit(obj){
-			var error = '';
-			if(!validateRadio(obj.resp,3)){error+='\nFirst answer is wrong';}
-			if(!validateRadio(obj.resp2,1)){error+='\nSecond answer is wrong';}
-			if(!validateRadio(obj.resp3,3)){error+='\nThird answer is wrong';}
-			if(!validateRadio(obj.resp4,1)){error+='\nFourth answer is wrong';}
-			if(!validateRadio(obj.resp5,2)){error+='\nFifth answer is wrong';}
-			if(!validateRadio(obj.resp6,1)){error+='\nSixth answer is wrong';}
-			if(!validateRadio(obj.resp7,1)){error+='\nSeventh answer is wrong';}
-			if(!validateRadio(obj.resp8,1)){error+='\nEighth answer is wrong';}
-			if (error.legnth){
-				alert("Problem:"+error);
-				return false;
-			}else{
-				alert("All answers are correct, Good job");
-				return true;
-			}
-
-		}	
-	</script>
+	
 </body>
 </html>
