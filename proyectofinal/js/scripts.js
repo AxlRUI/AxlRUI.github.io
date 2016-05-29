@@ -51,14 +51,43 @@ function valusuario(){
 function principal(){
 
 	document.getElementById("change2").className = "none";
-	document.getElementById("inicio").className = "inicio";
+	document.getElementById("ini").className = "wrap2";
 	document.getElementById("header").className = "";
 	document.getElementById("reg").className = "none";
 
 };
-function vocabulary(){
-
+function voca(){
+	document.getElementById("ini").className = "none";
+	document.getElementById("grammar").className = "none";
+	document.getElementById("stats").className = "none";
+	document.getElementById("vocabulary").className = "wrap2";
+};
+function grammar(){
+	document.getElementById("ini").className = "none";
+	document.getElementById("grammar").className = "wrap2";
+	document.getElementById("stats").className = "none";
+	document.getElementById("vocabulary").className = "none";
+};
+function stats(){
+	document.getElementById("ini").className = "none";
+	document.getElementById("grammar").className = "none";
+	document.getElementById("stats").className = "wrap2";
+	document.getElementById("vocabulary").className = "none";
 };
 function exit(){
 	location.href = 'http://axlrui.github.io/index.html';
+};
+function registroenv(){
+	var namo = document.getElementById("rt"),
+		pass1 = document.getElementById("qw"),
+		pass2 = document.getElementById("we"),
+		email = document.getElementById("cor");
+
+	if(namo.value == ""){
+		alert("Nombre de usuario no valido");
+	}else if(pass1.value != pass2.value){
+		alert("Las contraseñas no coinciden");
+	}else{
+		alert("Registro realizado con exito");
+	}
 };

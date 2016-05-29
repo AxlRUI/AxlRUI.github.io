@@ -271,6 +271,21 @@ header nav ul li .sub {
 	color: #fff;
 
 }
+.wrap2{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 200px;
+	width: 80%;
+	height: 80%;
+	padding: 100px;
+	background: rgba(33,33,33,0.9);;
+	-webkit-transition:all 1000ms ease;
+	-o-transition:all 1000ms ease;
+	transition: all 1000ms ease;
+	color: #fff;
+
+}
 
 .contenedor{
 	width: 100%
@@ -324,3 +339,6 @@ header nav ul li .sub {
 		.contenedor .formulario input[type="button"]:hover{
 			background: #536DFE;
 		}
+.contenedor .formulario .inicio h1{
+	text-align: center;
+}
