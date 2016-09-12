@@ -12,63 +12,684 @@
 	<title>Repaso</title>
 </head>
 <body>
-	<canvas id="bgCanvas"></canvas>
+
 		<div class="wrapper">
-			<div class="index">
-				<a href=""><img src="others/AxelLogopagina.png"></a>
+		<content>
+			<div class="slideshow" id="slide">
+				<div class="slide">
+					<div>
+						<h1 class="banner">¿Qué taller elegir?</h1>
+						<img src="http://i1036.photobucket.com/albums/a447/Axl_Uriel_Rubio_Ibarra/ok_zpsb5bnexjx.jpg" alt="">
+					</div>
+					<div>
+						<h1 class="banner">¿Te gusta la tecnología?</h1>
+						<img src="http://www.addtablets.com/wp-content/uploads/2014/09/7-things-you-absolutely-need-on-your-desk-to-kick-ass-at-work.jpg" alt="">
+					</div>
+					<div>
+						<h1 class="banner">¿Te gusta el diseño?</h1>
+						<img src="http://cdn.skilledup.com/wp-content/uploads/2014/11/graphic-design-tools-Feature_1290x688_MS.jpg" alt="">
+					</div>
+					<div>
+						<h1 class="banner">Elige tu taller</h1>
+						<img src="http://i1036.photobucket.com/albums/a447/Axl_Uriel_Rubio_Ibarra/3d6ec8d2-d3bf-4920-a077-e5fcd53c8257_zpsm3jtesms.jpg" alt="">
+					</div>
+				</div>
 			</div>
+		</content>
 		<header >
 			<nav id="header">
 				<ul>
-					<li class="sub"><a href="objetivo.html">Objetivo</a></li>
-					<li class="sub"><a href=""> HTML </a>
-						<ul class="child">
-							<li><a href="ejerciciospdf.html">Propuesta de ejercicios PDF</a></li>
-							<li><a href="">Solucion de ejercicios HTML</a></li>
-						</ul>
+					<li class="sub" id="in"><a onclick="inicio()">Inicio</a></li>
+					<li class="sub" id="re"><a onclick="registro()">Registro</a></li>
+					<li class="sub" id="ing"><a onclick="ingresar()"> Ingresar </a>
 					</li>
-					<li class="sub"><a href=""> CSS </a>
-						<ul class="child">
-							<li><a href="">Propuesta de ejercicios PDF</a></li>
-							<li><a href="">Solucion de ejercicios HTML</a></li>
-						</ul>
+					<li class="sub" id="cu"><a onclick="cuestionario()"> Cuestionario </a>
 					</li>
-					<li class="sub"><a href="">Base de datos</a></li>
-					<li class="sub"><a href="">Contacto</a></li>	
 				</ul>
 			</nav>
 		</header>
 		<content>
-			<div class="slideshow">
-				<div class="slide">
-					<div>
-						<h1 class="banner">Programación WEB</h1>
-						<img src="others/1.jpg" alt="">
-					</div>
-					<div>
-						<h1 class="banner">Escribiendo codigo</h1>
-						<img src="others/3.jpg" alt="">
-					</div>
-					<div>
-						<h1 class="banner">Universidad Politecnica de San Luis Potosí</h1>
-						<img src="others/2.jpg" alt="">
-					</div>
+			<div class="contenido" id="contenido">
+
+				<center>Bienvenido al Test de selección de taller de la <br> <quote>Escuela Secundaria Justo A. Zamudio Vargas.</quote><br></center>
+				Para empezar debes registrarte dando click al botón registro, si ya estas registrado da click en ingresar, para realizar el cuestionario una vez hayas ingresado da click en <br>cuestionario.
+			</div>
+			<div  class="none" id="registrar">
+				<div id="registro">
+						<div class="contenedor-formulario">
+							<div class="wrap">
+								<form action="" class="formulario" name="formulario_registro" method="get">
+									<div>
+										<div class="input-group">
+											<input type="text" id="nombre" name="nombre">
+											<label class="label" for="nombre" value="null">Nombre</label>
+										</div>
+										<div class="input-group">
+											<input type="email" id="correo" name="correo">
+											<label class="label" for="correo">Matricula</label>
+										</div>
+										<div class="input-group">
+											<input type="password" id="pass" name="pass">
+											<label class="label" for="pass" value="null">Contraseña</label>
+										</div>
+										<div class="input-group">
+											<input type="password" id="pass2" name="pass2">
+											<label class="label" for="pass2">Repetir Contraseña</label>
+										</div>
+										<div class="input-group radio">
+											<input type="radio" name="sexo" id="hombre" value="Hombre">
+											<label for="hombre">Hombre</label>
+											<input type="radio" name="sexo" id="mujer" value="Mujer">
+											<label for="mujer">Mujer</label>
+										</div>
+											
+										<input type="button" id="submit" onclick="registrotrue()" value="Enviar">
+									</div>
+								</form>
+							</div>
+						</div>
 				</div>
 			</div>
-			<div class="contenido">
-				Practicas de Repaso programación web II
+			<div  class="none" id="ingresar">
+				<div id="registro">
+						<div class="contenedor-formulario">
+							<div class="wrap">
+								<form action="" class="formulario" name="formulario_registro2" method="get">
+									<div>
+										<div class="input-group">
+											<input type="text" id="usuario" name="usuario">
+											<label class="label" for="usuario">Nombre</label>
+										</div>
+										<div class="input-group">
+											<input type="password" id="passo" name="passo">
+											<label class="label" for="passo">Contraseña</label>
+										</div>
+											
+										<input type="button" id="submiting" onclick="validaringreso()" value="Enviar">
+									</div>
+								</form>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div  class="none" id="cuestionario">
+				<div id="registro">
+						<div class="contenedor-formulario">
+							<div class="wrap">
+								<form action="" class="formulario" name="formulario_registro3" id="fprmulario" method="get">
+									<div style="color:#334D5C;">
+										<p>Con este cuestionario se decidirá el orden de preferencia de los talleres a los que eres afín</p><br>
+										<p>Selecciona del 1 al 5, 1. No me gusta, 2. Me es indiferente, 3. Me gusta poco, 4. Me gusta, 5. Me gusta mucho.</p><br>
+										<div class="input-group radio">
+											<p>Conocer el proceso de beneficio de algunos metales.</p>
+											<input type="radio" name="1" id="1" value="1" >
+											<label for="1">1</label>
+											<input type="radio" name="1" id="2" value="2">
+											<label for="2">2</label>
+											<input type="radio" name="1" id="3" value="3">
+											<label for="3">3</label>
+											<input type="radio" name="1" id="4" value="4">
+											<label for="4">4</label>
+											<input type="radio" name="1" id="5" value="5">
+											<label for="5">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Conocer cómo se escriben diferentes documentos comerciales.</p>
+											<input type="radio" name="2" id="6" value="1">
+											<label for="6">1</label>
+											<input type="radio" name="2" id="7" value="2">
+											<label for="7">2</label>
+											<input type="radio" name="2" id="8" value="3">
+											<label for="8">3</label>
+											<input type="radio" name="2" id="9" value="4">
+											<label for="9">4</label>
+											<input type="radio" name="2" id="10" value="5">
+											<label for="10">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Confeccionar cualquier tipo de ropa.</p>
+											<input type="radio" name="3" id="11" value="1">
+											<label for="11">1</label>
+											<input type="radio" name="3" id="12" value="2">
+											<label for="12">2</label>
+											<input type="radio" name="3" id="13" value="3">
+											<label for="13">3</label>
+											<input type="radio" name="3" id="14" value="4">
+											<label for="14">4</label>
+											<input type="radio" name="3" id="15" value="5">
+											<label for="15">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Dibujar las portadas o carátulas de tus trabajos escolares.</p>
+											<input type="radio" name="4" id="16" value="1">
+											<label for="16">1</label>
+											<input type="radio" name="4" id="17" value="2">
+											<label for="17">2</label>
+											<input type="radio" name="4" id="18" value="3">
+											<label for="18">3</label>
+											<input type="radio" name="4" id="19" value="4">
+											<label for="19">4</label>
+											<input type="radio" name="4" id="20" value="5">
+											<label for="20">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Construir un aparato para sustituir a las pilas eléctricas.</p>
+											<input type="radio" name="5" id="21" value="1">
+											<label for="21">1</label>
+											<input type="radio" name="5" id="22" value="2">
+											<label for="22">2</label>
+											<input type="radio" name="5" id="23" value="3">
+											<label for="23">3</label>
+											<input type="radio" name="5" id="24" value="4">
+											<label for="24">4</label>
+											<input type="radio" name="5" id="25" value="5">
+											<label for="25">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Desearía conocer las partes de una computadora.</p>
+											<input type="radio" name="6" id="26" value="1">
+											<label for="26">1</label>
+											<input type="radio" name="6" id="27" value="2">
+											<label for="27">2</label>
+											<input type="radio" name="6" id="28" value="3">
+											<label for="28">3</label>
+											<input type="radio" name="6" id="29" value="4">
+											<label for="29">4</label>
+											<input type="radio" name="6" id="30" value="5">
+											<label for="30">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Realizar trabajos diversos en donde tenga aplicación el hierro</p>
+											<input type="radio" name="7" id="31" value="1">
+											<label for="31">1</label>
+											<input type="radio" name="7" id="32" value="2">
+											<label for="32">2</label>
+											<input type="radio" name="7" id="33" value="3">
+											<label for="33">3</label>
+											<input type="radio" name="7" id="34" value="4">
+											<label for="34">4</label>
+											<input type="radio" name="7" id="35" value="5">
+											<label for="35">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Escribir a máquina sin ver el teclado.</p>
+											<input type="radio" name="8" id="36" value="1">
+											<label for="36">1</label>
+											<input type="radio" name="8" id="37" value="2">
+											<label for="37">2</label>
+											<input type="radio" name="8" id="38" value="3">
+											<label for="38">3</label>
+											<input type="radio" name="8" id="39" value="4">
+											<label for="39">4</label>
+											<input type="radio" name="8" id="40" value="5">
+											<label for="40">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Hacer transformaciones a tu ropa para renovarte.</p>
+											<input type="radio" name="9" id="41" value="1">
+											<label for="41">1</label>
+											<input type="radio" name="9" id="42" value="2">
+											<label for="42">2</label>
+											<input type="radio" name="9" id="43" value="3">
+											<label for="43">3</label>
+											<input type="radio" name="9" id="44" value="4">
+											<label for="44">4</label>
+											<input type="radio" name="9" id="45" value="5">
+											<label for="45">5</label>
+										<div class="input-group radio">
+											<p>Dibujar utilizando escuadras, regla "T" y compás.</p>
+											<input type="radio" name="10" id="46" value="1">
+											<label for="46">1</label>
+											<input type="radio" name="10" id="47" value="2">
+											<label for="47">2</label>
+											<input type="radio" name="10" id="48" value="3">
+											<label for="48">3</label>
+											<input type="radio" name="10" id="49" value="4">
+											<label for="49">4</label>
+											<input type="radio" name="10" id="50" value="5">
+											<label for="50">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Armar un amplificador de sonido.</p>
+											<input type="radio" name="11" id="51" value="1">
+											<label for="51">1</label>
+											<input type="radio" name="11" id="52" value="2">
+											<label for="52">2</label>
+											<input type="radio" name="11" id="53" value="3">
+											<label for="53">3</label>
+											<input type="radio" name="11" id="54" value="4">
+											<label for="54">4</label>
+											<input type="radio" name="11" id="55" value="5">
+											<label for="55">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Aprender a obtener información precisa y adecuada a cualquier hora del día.</p>
+											<input type="radio" name="12" id="56" value="1">
+											<label for="56">1</label>
+											<input type="radio" name="12" id="57" value="2">
+											<label for="57">2</label>
+											<input type="radio" name="12" id="58" value="3">
+											<label for="58">3</label>
+											<input type="radio" name="12" id="59" value="4">
+											<label for="59">4</label>
+											<input type="radio" name="12" id="60" value="5">
+											<label for="60">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Aprender a soldar con arco eléctrico y autógeno.</p>
+											<input type="radio" name="13" id="61" value="1">
+											<label for="61">1</label>
+											<input type="radio" name="13" id="62" value="2">
+											<label for="62">2</label>
+											<input type="radio" name="13" id="63" value="3">
+											<label for="63">3</label>
+											<input type="radio" name="13" id="64" value="4">
+											<label for="64">4</label>
+											<input type="radio" name="13" id="65" value="5">
+											<label for="65">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Hacer a máquina tus trabajos escolares.</p>
+											<input type="radio" name="14" id="66" value="1">
+											<label for="66">1</label>
+											<input type="radio" name="14" id="67" value="2">
+											<label for="67">2</label>
+											<input type="radio" name="14" id="68" value="3">
+											<label for="68">3</label>
+											<input type="radio" name="14" id="69" value="4">
+											<label for="69">4</label>
+											<input type="radio" name="14" id="70" value="5">
+											<label for="70">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Manejar plantillas en la elaboración de vestidos</p>
+											<input type="radio" name="15" id="71" value="1">
+											<label for="71">1</label>
+											<input type="radio" name="15" id="72" value="2">
+											<label for="72">2</label>
+											<input type="radio" name="15" id="73" value="3">
+											<label for="73">3</label>
+											<input type="radio" name="15" id="74" value="4">
+											<label for="74">4</label>
+											<input type="radio" name="15" id="75" value="5">
+											<label for="75">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Trazara escala sencillos muebles y juguetes.</p>
+											<input type="radio" name="16" id="76" value="1">
+											<label for="76">1</label>
+											<input type="radio" name="16" id="77" value="2">
+											<label for="77">2</label>
+											<input type="radio" name="16" id="78" value="3">
+											<label for="78">3</label>
+											<input type="radio" name="16" id="79" value="4">
+											<label for="79">4</label>
+											<input type="radio" name="16" id="80" value="5">
+											<label for="80">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Construir un intefón o intercomunicador.</p>
+											<input type="radio" name="17" id="81" value="1">
+											<label for="81">1</label>
+											<input type="radio" name="17" id="82" value="2">
+											<label for="82">2</label>
+											<input type="radio" name="17" id="83" value="3">
+											<label for="83">3</label>
+											<input type="radio" name="17" id="84" value="4">
+											<label for="84">4</label>
+											<input type="radio" name="17" id="85" value="5">
+											<label for="85">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Hacer tus tareas en un procesador de texto como Word.</p>
+											<input type="radio" name="18" id="86" value="1">
+											<label for="86">1</label>
+											<input type="radio" name="18" id="87" value="2">
+											<label for="87">2</label>
+											<input type="radio" name="18" id="88" value="3">
+											<label for="88">3</label>
+											<input type="radio" name="18" id="89" value="4">
+											<label for="89">4</label>
+											<input type="radio" name="18" id="90" value="5">
+											<label for="90">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Conocer los diferentes tipos de soldadura y elementos utilizados en su aplicación</p>
+											<input type="radio" name="19" id="91" value="1">
+											<label for="91">1</label>
+											<input type="radio" name="19" id="92" value="2">
+											<label for="92">2</label>
+											<input type="radio" name="19" id="93" value="3">
+											<label for="93">3</label>
+											<input type="radio" name="19" id="94" value="4">
+											<label for="94">4</label>
+											<input type="radio" name="19" id="95" value="5">
+											<label for="95">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Escribir rápido lo que se habla empleando líneas rectas y curvas.</p>
+											<input type="radio" name="20" id="96" value="1">
+											<label for="96">1</label>
+											<input type="radio" name="20" id="97" value="2">
+											<label for="97">2</label>
+											<input type="radio" name="20" id="98" value="3">
+											<label for="98">3</label>
+											<input type="radio" name="20" id="99" value="4">
+											<label for="99">4</label>
+											<input type="radio" name="20" id="100" value="5">
+											<label for="100">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Elaborar patrones para hacer ropa</p>
+											<input type="radio" name="21" id="101" value="1">
+											<label for="101">1</label>
+											<input type="radio" name="21" id="102" value="2">
+											<label for="102">2</label>
+											<input type="radio" name="21" id="103" value="3">
+											<label for="103">3</label>
+											<input type="radio" name="21" id="104" value="4">
+											<label for="104">4</label>
+											<input type="radio" name="21" id="105" value="5">
+											<label for="105">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Dibujar letras y números de diferentes estilos.</p>
+											<input type="radio" name="22" id="106" value="1">
+											<label for="106">1</label>
+											<input type="radio" name="22" id="107" value="2">
+											<label for="107">2</label>
+											<input type="radio" name="22" id="108" value="3">
+											<label for="108">3</label>
+											<input type="radio" name="22" id="109" value="4">
+											<label for="109">4</label>
+											<input type="radio" name="22" id="110" value="5">
+											<label for="110">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Conocer cómo funcionan los transformadores.</p>
+											<input type="radio" name="23" id="111" value="1">
+											<label for="111">1</label>
+											<input type="radio" name="23" id="112" value="2">
+											<label for="112">2</label>
+											<input type="radio" name="23" id="113" value="3">
+											<label for="113">3</label>
+											<input type="radio" name="23" id="114" value="4">
+											<label for="114">4</label>
+											<input type="radio" name="23" id="115" value="5">
+											<label for="115">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Te gustaría conocer programas donde puedes introducir formulas y graficar datos.</p>
+											<input type="radio" name="24" id="116" value="1">
+											<label for="116">1</label>
+											<input type="radio" name="24" id="117" value="2">
+											<label for="117">2</label>
+											<input type="radio" name="24" id="118" value="3">
+											<label for="118">3</label>
+											<input type="radio" name="24" id="119" value="4">
+											<label for="119">4</label>
+											<input type="radio" name="24" id="120" value="5">
+											<label for="120">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Hacer algunos trabajos artísticos por medio de forja.</p>
+											<input type="radio" name="25" id="121" value="1">
+											<label for="121">1</label>
+											<input type="radio" name="25" id="122" value="2">
+											<label for="122">2</label>
+											<input type="radio" name="25" id="123" value="3">
+											<label for="123">3</label>
+											<input type="radio" name="25" id="124" value="4">
+											<label for="124">4</label>
+											<input type="radio" name="25" id="125" value="5">
+											<label for="125">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Conocer la forma adecuada de clasificar y guardar ordenadamente documentos.</p>
+											<input type="radio" name="26" id="126" value="1">
+											<label for="126">1</label>
+											<input type="radio" name="26" id="127" value="2">
+											<label for="127">2</label>
+											<input type="radio" name="26" id="128" value="3">
+											<label for="128">3</label>
+											<input type="radio" name="26" id="129" value="4">
+											<label for="129">4</label>
+											<input type="radio" name="26" id="130" value="5">
+											<label for="130">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Conocer las técnicas de la costura a máquina.</p>
+											<input type="radio" name="27" id="131" value="1">
+											<label for="131">1</label>
+											<input type="radio" name="27" id="132" value="2">
+											<label for="132">2</label>
+											<input type="radio" name="27" id="133" value="3">
+											<label for="133">3</label>
+											<input type="radio" name="27" id="134" value="4">
+											<label for="134">4</label>
+											<input type="radio" name="27" id="135" value="5">
+											<label for="135">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Hacer sencillos planos de casa-habitación.</p>
+											<input type="radio" name="28" id="136" value="1">
+											<label for="136">1</label>
+											<input type="radio" name="28" id="137" value="2">
+											<label for="137">2</label>
+											<input type="radio" name="28" id="138" value="3">
+											<label for="138">3</label>
+											<input type="radio" name="28" id="139" value="4">
+											<label for="139">4</label>
+											<input type="radio" name="28" id="140" value="5">
+											<label for="140">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Construir un radio receptor.</p>
+											<input type="radio" name="29" id="141" value="1">
+											<label for="141">1</label>
+											<input type="radio" name="29" id="142" value="2">
+											<label for="142">2</label>
+											<input type="radio" name="29" id="143" value="3">
+											<label for="143">3</label>
+											<input type="radio" name="29" id="144" value="4">
+											<label for="144">4</label>
+											<input type="radio" name="29" id="145" value="5">
+											<label for="145">5</label>
+										</div>
+										<div class="input-group radio">
+											<p>Elaborar una página Web.</p>
+											<input type="radio" name="30" id="146" value="1">
+											<label for="146">1</label>
+											<input type="radio" name="30" id="147" value="2">
+											<label for="147">2</label>
+											<input type="radio" name="30" id="148" value="3">
+											<label for="148">3</label>
+											<input type="radio" name="30" id="149" value="4">
+											<label for="149">4</label>
+											<input type="radio" name="30" id="150" value="5">
+											<label for="150">5</label>
+										</div>
+
+
+											
+										<input type="button" id="boton" onclick="resultado()" value="Enviar">
+									</div>
+								</form>
+							</div>
+						</div>
+				</div>
 			</div>
 		</content>
 		</div>	
 	<script type="text/javascript" src="js/jquery.slides.js"></script>
-	<script type="text/javascript">
+	<script src="js/formulario.js"></script>
+	<script src="js/formulario2.js"></script>
+	<script src="js/formulario3.js"></script>
+	<script type="text/javascript">/*Contar las respuestas del cuestionario*/
+		$(document).ready(function(){
+			$("#boton").click(function(){
+				var a=1, b=2, c=3, d=4, e=5, f=6, estructuras=0;
+				var ofimatica = 0, textil = 0, grafico = 0, electronica = 0, informatica = 0;
+				for(var i=0;i<5;i++){
+					estructuras = eval($('input:radio[name='+a+']:checked').val()) + estructuras;
+					ofimatica = eval($('input:radio[name='+b+']:checked').val()) + ofimatica;
+					textil = eval($('input:radio[name='+c+']:checked').val()) + textil;
+					grafico = eval($('input:radio[name='+d+']:checked').val()) + grafico;
+					electronica = eval($('input:radio[name='+e+']:checked').val()) + electronica;
+					informatica = eval($('input:radio[name='+f+']:checked').val()) + informatica;
+					
+					a=a+6;
+					b=b+6;
+					c=c+6;
+					f=f+6;
+					d=d+6;
+					e=e+6;
+				}
+				document.write("Estructuras: " + estructuras + " Ofimatica: " + ofimatica + " Industria textil: " + textil + " Diseño grafico: " + grafico + " Informatica: " + informatica)
+				
+			});
+		});
+		
+	</script>
+	<script type="text/javascript">/*Este script cambia el contenido de la pagina, de esta manera no es necesario recargar en ningun momento, esto lo hago para simular que los datos ingresados por el usuario se estan guardando*/
+	var valregistro = 0,
+		valreg = 0,
+		intentos = 3;
+	var head = 500;
+	var cambio
+	var usuario,
+		pass,
+		valu,
+		valp;
+	function inicio(){
+		document.getElementById("contenido").className = "contenido";
+		document.getElementById("registrar").className = "none";
+		document.getElementById("ingresar").className = "none";
+		document.getElementById("cuestionario").className = "none";
+		    cambio = document.querySelector("#in");
+			cambio.style.background = "#E27A3F";
+				cambio = document.querySelector("#re");
+				cambio.style.background = "";
+				cambio = document.querySelector("#ing");
+				cambio.style.background = "";
+				cambio = document.querySelector("#cu");
+				cambio.style.background = "";
+				cambio = document.querySelector("#co");
+				cambio.style.background = "";
+	};
+	function registrotrue(){
+		usuario = document.getElementById("nombre").value;
+		pass = document.getElementById("pass").value;
+		alert("Registro correcto, ingresa para poder realizar el cuestionario")
+		valreg = 1;
+	};
+	function registro(){
+		document.getElementById("contenido").className = "none";
+		document.getElementById("ingresar").className = "none";
+		document.getElementById("cuestionario").className = "none";
+		document.getElementById("registrar").className = "contenido";
+		    cambio = document.querySelector("#re");
+			cambio.style.backgroundColor = "#E27A3F";
+				cambio = document.querySelector("#in");
+				cambio.style.background = "";
+				cambio = document.querySelector("#ing");
+				cambio.style.background = "";
+				cambio = document.querySelector("#cu");
+				cambio.style.background = "";
+				cambio = document.querySelector("#co");
+				cambio.style.background = "";
+
+	};
+	function ingresar(){
+		document.getElementById("contenido").className = "none";
+		document.getElementById("registrar").className = "none";
+		document.getElementById("cuestionario").className = "none";
+		document.getElementById("ingresar").className = "contenido"
+		    cambio = document.querySelector("#ing");
+			cambio.style.backgroundColor = "#E27A3F";
+				cambio = document.querySelector("#in");
+				cambio.style.background = "";
+				cambio = document.querySelector("#re");
+				cambio.style.background = "";
+				cambio = document.querySelector("#cu");
+				cambio.style.background = "";
+				cambio = document.querySelector("#co");
+				cambio.style.background = "";
+		
+	};
+	function validaringreso(){
+				valu = document.getElementById("usuario").value;
+				valp = document.getElementById("passo").value;
+
+		if(valu == usuario && valp == pass){
+			alert("Ingreso correcto")
+			valregistro = 1;
+		}else if(usuario == null && pass == null){
+			alert("Aun no te has registrado")
+		}else{
+			alert("Nombre de usuario o contraseña incorrectas te quedan " + intentos + " intentos")
+			intentos--;
+			if(intentos == -1){
+				document.write("Superaste el limite de intentos, la cuenta esta bloqueada, consulta al administrador");
+			}
+		}
+	};
+	function cuestionario(){
+		if(valregistro == 0){
+			alert("Aun no has ingresado");
+		}else{
+			document.getElementById("contenido").className = "none";
+			document.getElementById("registrar").className = "none";
+			document.getElementById("ingresar").className = "none";
+			document.getElementById("cuestionario").className = "contenido";
+			    cambio = document.querySelector("#cu");
+				cambio.style.backgroundColor = "#E27A3F";
+					cambio = document.querySelector("#in");
+					cambio.style.background = "";
+					cambio = document.querySelector("#re");
+					cambio.style.background = "";
+					cambio = document.querySelector("#ing");
+					cambio.style.background = "";
+					cambio = document.querySelector("#co");
+					cambio.style.background = "";
+		}
+	};
+		
+/*Efecto Parallax del fondo, canbia la posicion del fondo al hacer scroll */
+		$(document).ready(function(){
+ 
+	$(window).scroll(function(){
+		var barra = $(window).scrollTop();
+		var posicion =  (barra * 0.5);/*Valor de cambio*/
+		
+		$('body').css({
+			'background-position': '0 -' + posicion + 'px'/*modifica el valor css*/
+		});
+ 
+	});
+ 
+});
+$(document).ready(function(){
+ 
+	$(window).scroll(function(){
+		var barra = $(window).scrollTop();
+		var posicion =  (barra * 0.10);/*Valores base*/
+		
+		$('body').css({
+			'background-position': '0 -' + posicion + 'px'
+		});
+ 
+	});
+ 
+});
+/*Esta funcion hace que la barra de navegacion se quede fija en el tope de la ventana cuando se hace sroll y se llega a ella*/
 	     window.onscroll = scroll;
 	     function scroll(){
 	          
 	           var sc = window.pageYOffset;
 	           
 	           console.log('window.pageYOffset = '+sc);
-	           if(sc > 70){ 
+	           if(sc > head){ 
 	                if(!$('#header').hasClass('fixed')){ 
 	                     $('#header').addClass('fixed'); 
 	                }			
@@ -78,84 +699,7 @@
 	     }
 
 	</script>
-	<script type="text/javascript">
-var bgCanvas = document.getElementById('bgCanvas');
- 
-function render() {
- 
-    bgCanvas.patternizer({
-        stripes : [ 
-    {
-        color: '#B3906F',
-        rotation: 335,
-        opacity: 50,
-        mode: 'normal',
-        width: 3,
-        gap: 98,
-        offset: 123
-    },
-    {
-        color: '#B3906F',
-        rotation: 25,
-        opacity: 50,
-        mode: 'normal',
-        width: 3,
-        gap: 98,
-        offset: 123
-    },
-    {
-        color: '#74262A',
-        rotation: 25,
-        opacity: 60,
-        mode: 'normal',
-        width: 100,
-        gap: 100,
-        offset: 156
-    },
-    {
-        color: '#74262A',
-        rotation: 335,
-        opacity: 60,
-        mode: 'normal',
-        width: 100,
-        gap: 100,
-        offset: 156
-    }
-],
-bg : '#EBCCA9'
-    });
- 
-}
- 
-// resize the canvas to the window size
-function onResize() {
- 
-    // number of pixels of extra canvas drawn
-    var buffer = 100;
- 
-    // if extra canvas size is less than the buffer amount
-    if (bgCanvas.width - window.innerWidth < buffer ||
-        bgCanvas.height - window.innerHeight < buffer) {
- 
-        // resize the canvas to window plus double the buffer
-        bgCanvas.width = window.innerWidth + (buffer * 2);
-        bgCanvas.height = window.innerHeight + (buffer * 2);
- 
-        render();
-    }   
- 
-}
- 
-function init() {
-    onResize();
-    // create a listener for resize
-    // cowboy's throttle plugin keeps this event from running hog wild
-    window.addEventListener('resize', Cowboy.throttle(200, onResize), false);
-}
- 
-init();
 
-</script>
 
 </body>
 </html>
